@@ -1,0 +1,527 @@
+/* ===================================================
+   SNEAKERSTORE — CSS PERSONALIZADO
+   Tema: Street/Urbano — Preto & Laranja
+   =================================================== */
+
+/* --- VARIÁVEIS DE COR (mesmas cores da logo) --- */
+:root {
+  --laranja: #ff6600;
+  --laranja-escuro: #cc5200;
+  --preto: #000000;
+  --preto-suave: #111111;
+  --cinza-escuro: #1a1a1a;
+  --cinza-medio: #2a2a2a;
+  --cinza-texto: #888888;
+  --branco: #ffffff;
+}
+
+/* --- RESET & BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+  scroll-behavior: smooth;
+}
+
+/* --- UTILITÁRIO: CLASSE LARANJA --- */
+.letra-laranja {
+  color: var(--laranja) !important;
+}
+
+/* --- LOGO --- */
+.img-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+#navbar-principal {
+  background-color: rgba(0, 0, 0, 0.97) !important;
+  border-bottom: 2px solid var(--laranja);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.logo-marca {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: var(--branco) !important;
+  text-decoration: none;
+}
+
+.nav-link-custom {
+  color: var(--cinza-texto) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--laranja);
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.ativo {
+  color: var(--laranja) !important;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.ativo::after {
+  width: 80%;
+}
+
+/* Ícones sociais na navbar */
+.icone-social {
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icone-social:hover {
+  color: var(--laranja);
+  transform: translateY(-2px);
+}
+
+/* --- BOTÃO LARANJA PERSONALIZADO --- */
+.btn-laranja {
+  background-color: var(--laranja);
+  color: var(--branco);
+  border: 2px solid var(--laranja);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-laranja:hover {
+  background-color: transparent;
+  color: var(--laranja);
+  border-color: var(--laranja);
+}
+
+/* --- HERO / BANNER --- */
+.banner-hero {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.slide-1 {
+  background: linear-gradient(135deg, var(--preto) 50%, #331400 100%);
+}
+
+.slide-2 {
+  background: linear-gradient(135deg, #331400 0%, var(--preto) 60%);
+}
+
+.slide-3 {
+  background: radial-gradient(ellipse at center, #1a0a00 0%, var(--preto) 70%);
+}
+
+.titulo-hero {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 4px;
+  text-shadow: 0 0 40px rgba(255, 102, 0, 0.4);
+}
+
+.subtitulo-hero {
+  color: var(--cinza-texto);
+  letter-spacing: 2px;
+}
+
+.badge-destaque {
+  display: inline-block;
+  background: var(--laranja);
+  color: var(--branco);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2px;
+}
+
+/* --- SEÇÕES --- */
+.secao-escura {
+  background-color: var(--preto-suave);
+}
+
+.secao-label {
+  display: block;
+  color: var(--laranja);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.secao-titulo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 3px;
+  color: var(--branco);
+}
+
+.divisor-laranja {
+  width: 60px;
+  height: 3px;
+  background: var(--laranja);
+  margin-top: 1rem;
+}
+
+/* --- STATS --- */
+.stat-box {
+  border: 1px solid var(--cinza-medio);
+  border-radius: 8px;
+  background: var(--cinza-escuro);
+  transition: border-color 0.3s ease;
+}
+
+.stat-box:hover {
+  border-color: var(--laranja);
+}
+
+/* --- ACCORDION CUSTOMIZADO --- */
+.accordion-item-custom {
+  background: var(--cinza-escuro) !important;
+  border: 1px solid var(--cinza-medio) !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.accordion-btn-custom {
+  background: var(--cinza-escuro) !important;
+  color: var(--branco) !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: none !important;
+}
+
+.accordion-btn-custom:not(.collapsed) {
+  background: var(--cinza-medio) !important;
+  color: var(--laranja) !important;
+}
+
+.accordion-btn-custom::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(0deg);
+}
+
+.accordion-body-custom {
+  background: var(--cinza-escuro) !important;
+  color: var(--cinza-texto);
+  border-top: 1px solid var(--laranja) !important;
+}
+
+/* --- CARDS DE PRODUTO --- */
+.card-produto {
+  background: var(--cinza-escuro) !important;
+  border: 1px solid var(--cinza-medio) !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-produto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--laranja);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+  border-color: var(--laranja) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.15);
+}
+
+.card-produto:hover::before {
+  transform: scaleY(1);
+}
+
+.card-destaque-produto {
+  border-color: var(--laranja) !important;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.2);
+}
+
+.badge-mais-vendido {
+  position: absolute;
+  top: 16px;
+  right: -28px;
+  background: var(--laranja);
+  color: var(--branco);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 40px;
+  transform: rotate(45deg);
+}
+
+.badge-categoria {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--laranja);
+  color: var(--laranja);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+
+.icone-tenis {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 102, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- DEPOIMENTOS --- */
+.depoimento-card {
+  max-width: 700px;
+  background: var(--cinza-escuro);
+  border: 1px solid var(--cinza-medio);
+  border-radius: 12px;
+}
+
+.indicador-custom {
+  width: 30px !important;
+  height: 3px !important;
+  background-color: var(--cinza-texto) !important;
+  border: none !important;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.indicador-custom.active {
+  background-color: var(--laranja) !important;
+  width: 50px !important;
+}
+
+/* --- FORMULÁRIO DE CONTATO --- */
+.input-custom {
+  background: var(--cinza-escuro) !important;
+  border: 1px solid var(--cinza-medio) !important;
+  color: var(--branco) !important;
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-custom::placeholder {
+  color: var(--cinza-texto) !important;
+}
+
+.input-custom:focus {
+  border-color: var(--laranja) !important;
+  box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.2) !important;
+}
+
+.label-custom {
+  color: var(--cinza-texto);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+/* --- MAPA & INFO CONTATO --- */
+.info-contato-box {
+  background: var(--cinza-escuro);
+  border: 1px solid var(--cinza-medio);
+  border-radius: 8px;
+  border-left: 3px solid var(--laranja);
+}
+
+.mapa-box {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--cinza-medio);
+  min-height: 250px;
+}
+
+/* --- RODAPÉ --- */
+.footer-custom {
+  background: #050505;
+  border-top: 1px solid var(--cinza-medio);
+}
+
+.footer-link {
+  color: var(--cinza-texto);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--laranja);
+}
+
+.icone-social-footer {
+  color: var(--cinza-texto);
+  font-size: 1.1rem;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--cinza-medio);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icone-social-footer:hover {
+  color: var(--laranja);
+  border-color: var(--laranja);
+  transform: translateY(-3px);
+}
+
+/* --- PÁGINA EQUIPE --- */
+.equipe-hero {
+  min-height: 40vh;
+  background: linear-gradient(135deg, var(--preto) 60%, #1a0a00 100%);
+  border-bottom: 2px solid var(--laranja);
+}
+
+.card-membro {
+  background: var(--cinza-escuro) !important;
+  border: 1px solid var(--cinza-medio) !important;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card-membro:hover {
+  border-color: var(--laranja) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.1);
+}
+
+.avatar-membro {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 102, 0, 0.1);
+  border: 2px solid var(--laranja);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cargo-badge {
+  display: inline-block;
+  background: var(--laranja);
+  color: var(--branco);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 3px 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+/* --- IMAGENS DO CAROUSEL --- */
+.img-banner {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- IMAGEM DE DEPOIMENTO --- */
+.img-depoimento {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--laranja);
+}
+
+/* --- IMAGEM DE EQUIPE --- */
+.avatar-membro-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--laranja);
+}
+
+.img-equipe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .titulo-hero {
+    font-size: 2.5rem;
+  }
+
+  .banner-hero {
+    min-height: 70vh;
+  }
+
+  .depoimento-card {
+    margin: 0 1rem;
+    padding: 2rem !important;
+  }
+
+  .secao-titulo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-marca {
+    font-size: 1.4rem;
+  }
+
+  .banner-hero {
+    min-height: 60vh;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SneakerStore | Sobre Nós</title>
+  <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-principal">
+    <div class="container">
+      <a class="navbar-brand logo-marca" href="../index.html">
+        <img src="../img/logo.png" alt="SneakerStore" class="img-logo">
+        <span class="letra-laranja">SNEAKER</span>STORE
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-2">
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom ativo" href="sobre.html">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="equipe.html">Equipe</a></li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center ms-lg-3 mt-3 mt-lg-0">
+          <a href="https://www.instagram.com/" target="_blank" class="icone-social"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank" class="icone-social"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" class="icone-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/5561999999999" target="_blank" class="icone-social"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="sobre" class="py-5 secao-escura" style="min-height: 80vh; display: flex; align-items: center;">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="secao-label">QUEM SOMOS</span>
+        <h2 class="secao-titulo">Sobre <span class="letra-laranja">Nós</span></h2>
+        <div class="divisor-laranja mx-auto"></div>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="fs-5 text-light lh-lg">
+            A <strong class="letra-laranja">SneakerStore</strong> nasceu em 2018 nas ruas de Brasília com uma missão simples: levar os melhores tênis do mundo para quem respira cultura urbana.
+          </p>
+          <p class="text-secondary lh-lg">
+            De skate a basquete, de corrida a estilo, nossa curadoria é feita por apaixonados por sneakers. Cada par que vendemos é 100% original, verificado e entregue com cuidado.
+          </p>
+          <div class="row g-3 mt-3">
+            <div class="col-4 text-center">
+              <div class="stat-box p-3">
+                <h3 class="letra-laranja fw-bold mb-0">5k+</h3>
+                <small class="text-secondary">Clientes</small>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-box p-3">
+                <h3 class="letra-laranja fw-bold mb-0">200+</h3>
+                <small class="text-secondary">Modelos</small>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-box p-3">
+                <h3 class="letra-laranja fw-bold mb-0">7 anos</h3>
+                <small class="text-secondary">No mercado</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="accordion accordion-custom" id="accordionSobre">
+            <div class="accordion-item accordion-item-custom">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                  <i class="fas fa-trophy me-2 letra-laranja"></i> Nossa História
+                </button>
+              </h2>
+              <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#accordionSobre">
+                <div class="accordion-body accordion-body-custom">
+                  Começamos em 2018 com uma banca na Feira dos Importados de Brasília. Hoje somos referência nacional com loja física em Taguatinga e loja virtual com entregas para todo o Brasil.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-item-custom mt-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-btn-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                  <i class="fas fa-bullseye me-2 letra-laranja"></i> Nossa Missão
+                </button>
+              </h2>
+              <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+                <div class="accordion-body accordion-body-custom">
+                  Democratizar o acesso aos melhores sneakers com autenticidade garantida, preço justo e atendimento que respeita a cultura do cliente.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-item-custom mt-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion-btn-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
+                  <i class="fas fa-shield-alt me-2 letra-laranja"></i> Nossas Garantias
+                </button>
+              </h2>
+              <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+                <div class="accordion-body accordion-body-custom">
+                  100% originais, troca grátis em até 30 dias, parcelamento em até 12x sem juros e entrega expressa para o Distrito Federal.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-custom py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4 class="logo-marca mb-3"><span class="letra-laranja">SNEAKER</span>STORE</h4>
+          <p class="text-secondary">Os melhores tênis com autenticidade garantida. Cultura urbana desde 2018.</p>
+        </div>
+        <div class="col-md-4 text-md-center">
+          <h6 class="text-white fw-bold mb-3">LINKS RÁPIDOS</h6>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="footer-link">Início</a></li>
+            <li><a href="sobre.html" class="footer-link">Sobre Nós</a></li>
+            <li><a href="produtos.html" class="footer-link">Produtos</a></li>
+            <li><a href="equipe.html" class="footer-link">Equipe</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <h6 class="text-white fw-bold mb-3">REDES SOCIAIS</h6>
+          <div class="d-flex gap-3 justify-content-md-end">
+            <a href="https://www.instagram.com/" target="_blank" class="icone-social-footer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" class="icone-social-footer"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="icone-social-footer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/5561999999999" target="_blank" class="icone-social-footer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" class="icone-social-footer"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center text-secondary mb-0 mt-3">© 2025 SneakerStore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

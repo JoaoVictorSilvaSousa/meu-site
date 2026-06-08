@@ -4,66 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SneakerStore | Tênis & Cultura Urbana</title>
-
-  <!-- Bootstrap CSS (local) -->
   <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-
-  <!-- Font Awesome via CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS Personalizado -->
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
-  <!-- ================================================
-       NAVBAR
-  ================================================= -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar-principal">
     <div class="container">
-      <a class="navbar-brand logo-marca" href="#">
+      <a class="navbar-brand logo-marca" href="index.html">
         <img src="img/logo.png" alt="SneakerStore" class="img-logo">
         <span class="letra-laranja">SNEAKER</span>STORE
       </a>
-      <button class="navbar-toggler border-0" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav mx-auto gap-2">
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="#sobre">Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="#produtos">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="#depoimentos">Depoimentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="#contato">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-custom" href="equipe.html">Equipe</a>
-          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom ativo" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="paginas/sobre.html">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="paginas/produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="paginas/contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="paginas/equipe.html">Equipe</a></li>
         </ul>
-        <!-- Ícones Sociais na Navbar -->
         <div class="d-flex gap-3 align-items-center ms-lg-3 mt-3 mt-lg-0">
-          <a href="#" class="icone-social" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="icone-social" title="TikTok"><i class="fab fa-tiktok"></i></a>
-          <a href="#" class="icone-social" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="icone-social" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="icone-social"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank" class="icone-social"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" class="icone-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/5561999999999" target="_blank" class="icone-social"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ================================================
-       HEADER — CAROUSEL DE DESTAQUE
-  ================================================= -->
   <header>
     <div id="carouselDestaque" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
       <div class="carousel-indicators">
@@ -71,62 +45,41 @@
         <button type="button" data-bs-target="#carouselDestaque" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#carouselDestaque" data-bs-slide-to="2"></button>
       </div>
-
       <div class="carousel-inner">
-
-        <!-- Slide 1 -->
         <div class="carousel-item active">
           <img src="img/destaque1.jpg" class="d-block w-100 img-banner" alt="Tênis Streetwear">
           <div class="carousel-caption-custom d-flex align-items-center justify-content-center text-center text-white">
             <div class="container">
               <p class="badge-destaque mb-3">NOVA COLEÇÃO 2025</p>
-              <h1 class="display-1 fw-bold titulo-hero">
-                ESTILO NAS <span class="letra-laranja">RUAS</span>
-              </h1>
+              <h1 class="display-1 fw-bold titulo-hero">ESTILO NAS <span class="letra-laranja">RUAS</span></h1>
               <p class="lead fs-4 mb-4 subtitulo-hero">Os tênis que definem quem você é.</p>
-              <a href="#produtos" class="btn btn-laranja btn-lg px-5 py-3">
-                VER COLEÇÃO <i class="fas fa-arrow-right ms-2"></i>
-              </a>
+              <a href="paginas/produtos.html" class="btn btn-laranja btn-lg px-5 py-3">VER COLEÇÃO <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- Slide 2 -->
         <div class="carousel-item">
           <img src="img/destaque2.jpg" class="d-block w-100 img-banner" alt="Loja de Tênis">
           <div class="carousel-caption-custom d-flex align-items-center justify-content-center text-center text-white">
             <div class="container">
               <p class="badge-destaque mb-3">FRETE GRÁTIS</p>
-              <h1 class="display-1 fw-bold titulo-hero">
-                COMPRAS ACIMA DE <span class="letra-laranja">R$299</span>
-              </h1>
+              <h1 class="display-1 fw-bold titulo-hero">COMPRAS ACIMA DE <span class="letra-laranja">R$299</span></h1>
               <p class="lead fs-4 mb-4 subtitulo-hero">Entrega rápida para todo o Brasil.</p>
-              <a href="#contato" class="btn btn-laranja btn-lg px-5 py-3">
-                COMPRAR AGORA <i class="fas fa-shopping-cart ms-2"></i>
-              </a>
+              <a href="paginas/contato.html" class="btn btn-laranja btn-lg px-5 py-3">COMPRAR AGORA <i class="fas fa-shopping-cart ms-2"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- Slide 3 -->
         <div class="carousel-item">
           <img src="img/destaque3.jpg" class="d-block w-100 img-banner" alt="Pessoa usando tênis">
           <div class="carousel-caption-custom d-flex align-items-center justify-content-center text-center text-white">
             <div class="container">
               <p class="badge-destaque mb-3">100% ORIGINAIS</p>
-              <h1 class="display-1 fw-bold titulo-hero">
-                AUTENTICIDADE <span class="letra-laranja">GARANTIDA</span>
-              </h1>
+              <h1 class="display-1 fw-bold titulo-hero">AUTENTICIDADE <span class="letra-laranja">GARANTIDA</span></h1>
               <p class="lead fs-4 mb-4 subtitulo-hero">Cada par verificado por especialistas.</p>
-              <a href="#sobre" class="btn btn-outline-light btn-lg px-5 py-3">
-                SAIBA MAIS <i class="fas fa-info-circle ms-2"></i>
-              </a>
+              <a href="paginas/sobre.html" class="btn btn-outline-light btn-lg px-5 py-3">SAIBA MAIS <i class="fas fa-info-circle ms-2"></i></a>
             </div>
           </div>
         </div>
-
       </div>
-
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
@@ -136,208 +89,6 @@
     </div>
   </header>
 
-  <!-- ================================================
-       SEÇÃO 1 — SOBRE NÓS
-  ================================================= -->
-  <section id="sobre" class="py-5 secao-escura">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <span class="secao-label">QUEM SOMOS</span>
-        <h2 class="secao-titulo">Sobre <span class="letra-laranja">Nós</span></h2>
-        <div class="divisor-laranja mx-auto"></div>
-      </div>
-
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <p class="fs-5 text-light lh-lg">
-            A <strong class="letra-laranja">SneakerStore</strong> nasceu em 2018 nas ruas de Brasília com uma missão simples: levar os melhores tênis do mundo para quem respira cultura urbana.
-          </p>
-          <p class="text-secondary lh-lg">
-            De skate a basquete, de corrida a estilo, nossa curadoria é feita por apaixonados por sneakers. Cada par que vendemos é 100% original, verificado e entregue com cuidado.
-          </p>
-          <div class="row g-3 mt-3">
-            <div class="col-4 text-center">
-              <div class="stat-box p-3">
-                <h3 class="letra-laranja fw-bold mb-0">5k+</h3>
-                <small class="text-secondary">Clientes</small>
-              </div>
-            </div>
-            <div class="col-4 text-center">
-              <div class="stat-box p-3">
-                <h3 class="letra-laranja fw-bold mb-0">200+</h3>
-                <small class="text-secondary">Modelos</small>
-              </div>
-            </div>
-            <div class="col-4 text-center">
-              <div class="stat-box p-3">
-                <h3 class="letra-laranja fw-bold mb-0">7 anos</h3>
-                <small class="text-secondary">No mercado</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <!-- ACCORDION SOBRE -->
-          <div class="accordion accordion-custom" id="accordionSobre">
-            <div class="accordion-item accordion-item-custom">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-btn-custom" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#acc1">
-                  <i class="fas fa-trophy me-2 letra-laranja"></i> Nossa História
-                </button>
-              </h2>
-              <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#accordionSobre">
-                <div class="accordion-body accordion-body-custom">
-                  Começamos em 2018 com uma banca no Feira dos Importados de Brasília. Hoje somos referência nacional com loja física em Taguatinga e loja virtual com entregas para todo o Brasil.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item accordion-item-custom mt-2">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-btn-custom collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#acc2">
-                  <i class="fas fa-bullseye me-2 letra-laranja"></i> Nossa Missão
-                </button>
-              </h2>
-              <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
-                <div class="accordion-body accordion-body-custom">
-                  Democratizar o acesso aos melhores sneakers com autenticidade garantida, preço justo e atendimento que respeita a cultura do cliente.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item accordion-item-custom mt-2">
-              <h2 class="accordion-header">
-                <button class="accordion-button accordion-btn-custom collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#acc3">
-                  <i class="fas fa-shield-alt me-2 letra-laranja"></i> Nossas Garantias
-                </button>
-              </h2>
-              <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
-                <div class="accordion-body accordion-body-custom">
-                  100% originais, troca grátis em até 30 dias, parcelamento em até 12x sem juros e entrega expressa para o Distrito Federal.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       SEÇÃO 2 — PRODUTOS
-  ================================================= -->
-  <section id="produtos" class="py-5 bg-black text-white">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <span class="secao-label">CATÁLOGO</span>
-        <h2 class="secao-titulo">Nossos <span class="letra-laranja">Produtos</span></h2>
-        <div class="divisor-laranja mx-auto"></div>
-      </div>
-
-      <div class="row g-4">
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto h-100">
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-shoe-prints fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">LIFESTYLE</span>
-              <h5 class="fw-bold text-white">Air Street Pro</h5>
-              <p class="text-secondary flex-grow-1">Design urbano com solado de borracha vulcanizada. Ideal para o dia a dia nas ruas.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 349,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto card-destaque-produto h-100">
-            <div class="badge-mais-vendido">MAIS VENDIDO</div>
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-running fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">PERFORMANCE</span>
-              <h5 class="fw-bold text-white">RunMax Elite</h5>
-              <p class="text-secondary flex-grow-1">Amortecimento de gel e cabedal respirável. Zero compromisso entre estilo e conforto.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 499,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto h-100">
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-skating fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">SKATE</span>
-              <h5 class="fw-bold text-white">DeckRider OG</h5>
-              <p class="text-secondary flex-grow-1">Sola de borracha flat com grip máximo. O favorito de quem anda de skate.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 279,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto h-100">
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-basketball-ball fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">BASQUETE</span>
-              <h5 class="fw-bold text-white">Court King High</h5>
-              <p class="text-secondary flex-grow-1">Cano alto para suporte no tornozelo. Estilo de quadra direto para a rua.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 589,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto h-100">
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-fire fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">LIMITED</span>
-              <h5 class="fw-bold text-white">HypeCollab X</h5>
-              <p class="text-secondary flex-grow-1">Edição limitada em collab com artistas locais. Apenas 50 pares disponíveis.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 899,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card card-produto h-100">
-            <div class="card-body p-4 d-flex flex-column align-items-center text-center">
-              <div class="icone-tenis mb-3">
-                <i class="fas fa-leaf fa-3x letra-laranja"></i>
-              </div>
-              <span class="badge-categoria mb-2">ECO</span>
-              <h5 class="fw-bold text-white">GreenStep Lite</h5>
-              <p class="text-secondary flex-grow-1">Feito com materiais reciclados. Estilo consciente para quem cuida do planeta.</p>
-              <p class="fs-4 fw-bold letra-laranja mb-3">R$ 319,90</p>
-              <a href="#contato" class="btn btn-laranja w-100">Pedir Agora</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       SEÇÃO 3 — DEPOIMENTOS (CAROUSEL)
-  ================================================= -->
   <section id="depoimentos" class="py-5 secao-escura">
     <div class="container py-4">
       <div class="text-center mb-5">
@@ -348,67 +99,39 @@
 
       <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
-
           <div class="carousel-item active">
             <div class="depoimento-card mx-auto text-center p-5">
               <div class="estrelas mb-3">
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
+                <i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i>
               </div>
-              <p class="fs-5 text-light fst-italic mb-4">
-                "Comprei o RunMax Elite e me apaixonei. Chegou rapidíssimo, embalagem impecável e o tênis é exatamente como nas fotos. Recomendo demais!"
-              </p>
-              <div class="depoimento-avatar mx-auto mb-2">
-                <img src="img/depoimento1.jpg" alt="Lucas Ferreira" class="img-depoimento">
-              </div>
+              <p class="fs-5 text-light fst-italic mb-4">"Comprei o RunMax Elite e me apaixonei. Chegou rapidíssimo..."</p>
+              <div class="depoimento-avatar mx-auto mb-2"><img src="img/depoimento1.jpg" alt="Lucas Ferreira" class="img-depoimento"></div>
               <strong class="text-white d-block">Lucas Ferreira</strong>
               <small class="text-secondary">Brasília, DF</small>
             </div>
           </div>
-
           <div class="carousel-item">
             <div class="depoimento-card mx-auto text-center p-5">
               <div class="estrelas mb-3">
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
+                <i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i>
               </div>
-              <p class="fs-5 text-light fst-italic mb-4">
-                "Melhor loja de sneakers de Brasília, sem dúvida. Atendimento super atencioso e o produto chegou autenticado. Já é a terceira vez que compro!"
-              </p>
-              <div class="depoimento-avatar mx-auto mb-2">
-                <img src="img/depoimento2.jpg" alt="Ana Carolina Silva" class="img-depoimento">
-              </div>
+              <p class="fs-5 text-light fst-italic mb-4">"Melhor loja de sneakers de Brasília, sem dúvida. Atendimento super atencioso..."</p>
+              <div class="depoimento-avatar mx-auto mb-2"><img src="img/depoimento2.jpg" alt="Ana Carolina Silva" class="img-depoimento"></div>
               <strong class="text-white d-block">Ana Carolina Silva</strong>
               <small class="text-secondary">Taguatinga, DF</small>
             </div>
           </div>
-
           <div class="carousel-item">
             <div class="depoimento-card mx-auto text-center p-5">
               <div class="estrelas mb-3">
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star letra-laranja"></i>
-                <i class="fas fa-star-half-alt letra-laranja"></i>
+                <i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star letra-laranja"></i><i class="fas fa-star-half-alt letra-laranja"></i>
               </div>
-              <p class="fs-5 text-light fst-italic mb-4">
-                "O HypeCollab X é simplesmente incrível. Edição limitada de verdade, design único. Valeu cada centavo. Parabéns à equipe SneakerStore!"
-              </p>
-              <div class="depoimento-avatar mx-auto mb-2">
-                <img src="img/depoimento3.jpg" alt="Rafael Mendes" class="img-depoimento">
-              </div>
+              <p class="fs-5 text-light fst-italic mb-4">"O HypeCollab X é simplesmente incrível. Edição limitada de verdade..."</p>
+              <div class="depoimento-avatar mx-auto mb-2"><img src="img/depoimento3.jpg" alt="Rafael Mendes" class="img-depoimento"></div>
               <strong class="text-white d-block">Rafael Mendes</strong>
               <small class="text-secondary">Samambaia, DF</small>
             </div>
           </div>
-
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(0deg);"></span>
@@ -416,92 +139,10 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
           <span class="carousel-control-next-icon" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(0deg);"></span>
         </button>
-        <div class="carousel-indicators position-relative mt-4">
-          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active indicador-custom"></button>
-          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1" class="indicador-custom"></button>
-          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2" class="indicador-custom"></button>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ================================================
-       SEÇÃO 4 — CONTATO + MAPA
-  ================================================= -->
-  <section id="contato" class="py-5 bg-black text-white">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <span class="secao-label">FALE CONOSCO</span>
-        <h2 class="secao-titulo">Entre em <span class="letra-laranja">Contato</span></h2>
-        <div class="divisor-laranja mx-auto"></div>
-      </div>
-
-      <div class="row g-5">
-        <!-- Formulário -->
-        <div class="col-lg-6">
-          <form class="formulario-custom">
-            <div class="mb-4">
-              <label class="form-label label-custom">Nome Completo</label>
-              <input type="text" class="form-control input-custom" placeholder="Seu nome">
-            </div>
-            <div class="mb-4">
-              <label class="form-label label-custom">E-mail</label>
-              <input type="email" class="form-control input-custom" placeholder="seu@email.com">
-            </div>
-            <div class="mb-4">
-              <label class="form-label label-custom">Telefone / WhatsApp</label>
-              <input type="tel" class="form-control input-custom" placeholder="(61) 9 0000-0000">
-            </div>
-            <div class="mb-4">
-              <label class="form-label label-custom">Produto de Interesse</label>
-              <select class="form-select input-custom">
-                <option value="" disabled selected>Selecione um modelo</option>
-                <option>Air Street Pro — R$ 349,90</option>
-                <option>RunMax Elite — R$ 499,90</option>
-                <option>DeckRider OG — R$ 279,90</option>
-                <option>Court King High — R$ 589,90</option>
-                <option>HypeCollab X — R$ 899,90</option>
-                <option>GreenStep Lite — R$ 319,90</option>
-              </select>
-            </div>
-            <div class="mb-4">
-              <label class="form-label label-custom">Mensagem</label>
-              <textarea class="form-control input-custom" rows="4" placeholder="Dúvidas, pedidos, trocas..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-laranja w-100 py-3 fw-bold fs-5">
-              ENVIAR MENSAGEM <i class="fas fa-paper-plane ms-2"></i>
-            </button>
-          </form>
-        </div>
-
-        <!-- Mapa + Info -->
-        <div class="col-lg-6 d-flex flex-column gap-4">
-          <div class="info-contato-box p-4">
-            <h5 class="fw-bold letra-laranja mb-3"><i class="fas fa-map-marker-alt me-2"></i>Nossa Loja</h5>
-            <p class="text-secondary mb-1">Taguatinga Shopping, Loja 42</p>
-            <p class="text-secondary mb-0">Taguatinga — Brasília, DF</p>
-          </div>
-          <div class="info-contato-box p-4">
-            <h5 class="fw-bold letra-laranja mb-3"><i class="fas fa-clock me-2"></i>Horário</h5>
-            <p class="text-secondary mb-1">Seg a Sex: 09h–20h</p>
-            <p class="text-secondary mb-0">Sáb e Dom: 10h–18h</p>
-          </div>
-
-          <!-- Google Maps Embed -->
-          <div class="mapa-box flex-grow-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.784203150951!2d-48.0488815133431!3d-15.841453745627652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a328bd8bc60c1%3A0xd082313d70393121!2sTaguatinga%20Shopping!5e1!3m2!1spt-BR!2sbr!4v1780951638859!5m2!1spt-BR!2sbr"
-              width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       RODAPÉ
-  ================================================= -->
   <footer class="footer-custom py-5">
     <div class="container">
       <div class="row g-4">
@@ -512,33 +153,29 @@
         <div class="col-md-4 text-md-center">
           <h6 class="text-white fw-bold mb-3">LINKS RÁPIDOS</h6>
           <ul class="list-unstyled">
-            <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
-            <li><a href="#produtos" class="footer-link">Produtos</a></li>
-            <li><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
-            <li><a href="equipe.html" class="footer-link">Equipe</a></li>
+            <li><a href="index.html" class="footer-link">Início</a></li>
+            <li><a href="paginas/sobre.html" class="footer-link">Sobre Nós</a></li>
+            <li><a href="paginas/produtos.html" class="footer-link">Produtos</a></li>
+            <li><a href="paginas/equipe.html" class="footer-link">Equipe</a></li>
           </ul>
         </div>
         <div class="col-md-4 text-md-end">
           <h6 class="text-white fw-bold mb-3">REDES SOCIAIS</h6>
           <div class="d-flex gap-3 justify-content-md-end">
-            <a href="#" class="icone-social-footer"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="icone-social-footer"><i class="fab fa-tiktok"></i></a>
-            <a href="#" class="icone-social-footer"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="icone-social-footer"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="icone-social-footer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="icone-social-footer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank" class="icone-social-footer"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="icone-social-footer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/5561999999999" target="_blank" class="icone-social-footer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" class="icone-social-footer"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
       <hr class="border-secondary mt-4">
-      <p class="text-center text-secondary mb-0 mt-3">
-        &copy; 2025 SneakerStore. Todos os direitos reservados.
-      </p>
+      <p class="text-center text-secondary mb-0 mt-3">© 2025 SneakerStore. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS (local) -->
   <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- Script personalizado -->
   <script src="js/script.js"></script>
 </body>
 </html>
